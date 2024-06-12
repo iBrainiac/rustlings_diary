@@ -23,7 +23,7 @@ The purpose of this repository is to document my progress as I work through the 
 
 1. **Clone this repository**:
    
-    git clone https://github.com/Nelly-Njeri/RustlingsSolutions.git
+    git clone this repo
 
     cd Rustlings-Solutions
 
