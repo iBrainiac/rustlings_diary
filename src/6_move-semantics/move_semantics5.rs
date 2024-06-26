@@ -18,3 +18,18 @@ fn main() {
     *z += 1000;
     assert_eq!(x, 1200);
 }
+/*The key changes:
+
+Declare x
+Declare borrow of y from x
+Use y
+Declare borrow of z from x (no conflict since y is no longer borrowed)
+Use z
+Assertion
+This works because:
+
+y borrows x
+y is used
+y's borrow ends
+z can now borrow x since it is not currently borrowed
+By reordering so the borrows do not overlap in time, it compiles without issues. */
